@@ -1,0 +1,183 @@
+.fv {
+    width: 100%;
+    
+}
+.fv img {
+    width: 640px;
+    margin: 0 auto;
+    display: block;
+}
+.fv .mainview{
+    width: 840px;
+}
+
+@media screen and (max-width: 768px){
+    .fv img {
+        width: 100%;
+    }
+    .fv .mainview{
+        width:100%;
+    }
+}
+/*----------------------------------------------------
+	offer _pc
+----------------------------------------------------*/
+
+.cv {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.cv::after {
+    padding-bottom: 20px;
+    content: '';
+}
+
+.teiki5 {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 440px;
+    background: url(../images/vgdm30/set05.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.teiki5_btn {
+    -webkit-animation-name: expand;
+    -moz-animation-name: expand;
+    -o-animation-name: expand;
+    animation-name: expand;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.teiki5 img {
+    position: absolute;
+    width: 276px;
+    height: 52px;
+    bottom: 35px;
+    left: 303px;
+}
+
+.teiki4 {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 289px;
+    background: url(../images/vgdm30/set04.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.teiki4 img {
+    position: absolute;
+    width: 203px;
+    height: 40px;
+    top: 202px;
+    left: 389px;
+}
+
+.teiki3 {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 216px;
+    background: url(../images/vgdm30/set03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.teiki3 img {
+    position: absolute;
+    width: 203px;
+    height: 40px;
+    top: 142px;
+    left: 391px;
+}
+
+.teiki2 {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 220px;
+    background: url(../images/vgdm30/set02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.teiki2 img {
+    position: absolute;
+    width: 163px;
+    height: 43px;
+    top: 124px;
+    left: 426px;
+}
+
+.teiki1{
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 182px;
+    background: url(../images/vgdm30/set01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width: 768px){
+    .cv{
+        display: none;
+    }
+}
+
+/*----------------------------------------------------
+	offer _ m
+----------------------------------------------------*/
+.cv_m {
+    display: none;
+}
+@media screen and (max-width: 768px){
+.cv_m {
+    display: block;
+    width: 100%;
+}
+.cv_m img{
+    width: 100%;
+}
+}
+.sns{
+    width: 100%;
+ }
+ .sns_img{max-width: 1000px;margin: 0 auto;position: relative;}
+ .sns_btn {
+     text-align: center;
+ }
+ .sns_btn ul li{
+     display: inline-block;
+     margin: 0 8px;
+     cursor: pointer;
+ }
+ 
+ .buybtn{
+     width: 174px;
+     position: fixed;
+     right: 0;
+     bottom: 45px;
+     z-index: 99;
+ }
+ .buybtn img{width: 100%; height: auto;}
+@media screen and (max-width: 768px){
+    .buybtn{
+        width: 28%;
+        max-width: 170px;
+    }
+}
