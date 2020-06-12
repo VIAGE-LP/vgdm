@@ -168,16 +168,24 @@
  }
  
  .buybtn{
-     width: 174px;
-     position: fixed;
-     right: 0;
-     bottom: 45px;
-     z-index: 99;
- }
- .buybtn img{width: 100%; height: auto;}
+    width: 174px;
+    position: fixed;
+    right: 0;
+    bottom: 76px;
+    z-index: 99;
+}
+.buybtn img{width: 100%; height: auto;}
 @media screen and (max-width: 768px){
     .buybtn{
         width: 28%;
         max-width: 170px;
     }
+}
+
+#wh-widget-send-button{
+    display: none;
+}
+
+#fb-root{
+    display: none;
 }

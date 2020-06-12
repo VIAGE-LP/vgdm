@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../CommonFiles/plugin/multi-product/css/multi-product.css">
     <script src="acsJs/multi-product.setting.js?ver=20200611"></script>
     <script src="../CommonFiles/plugin/multi-product/js/multi-product.init.js?ver=20200521"></script>
-	<script src="acsJs/multi-product_gift_with_purchase.js?ver=20200309"></script>
+    <script src="acsJs/multi-product_gift_with_purchase.js?ver=20200309"></script>
     <!-- 編集削除禁止※ACCESS　JAVASCRIPT※編集削除禁止　-->
     <!-- ▼自由編集箇所▼ -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -31,6 +31,29 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="385203498713173" theme_color="#ff7e29"
+        logged_in_greeting="任何問題歡迎詢問我們喔~" logged_out_greeting="任何問題歡迎詢問我們喔~">
+    </div>
+
     <!-- Google Tag Manager※不要な場合、削除可 -->
     <script type="text/javascript">
         callGTM();
@@ -59,13 +82,14 @@
                         <img class="mainview" src="images/vgdm30/01_fv.jpg" title="擁有完美胸型的捷徑-晚安立體美型內衣">
                         <img src="images/vgdm30/02_million.jpg">
                         <img src="images/vgdm30/03_keypoint.jpg">
-                        <img src="images/vgdm30/04_blogger.jpg" >
+                        <img src="images/vgdm30/04_blogger.jpg">
                         <img src="images/vgdm30/05_magzine.jpg">
                     </div>
                     <div class="cv">
                         <!-- 5入組 -->
                         <div class="teiki5">
-                            <a href="#buy"><img src="images/btn gif/teiki_btn.gif" style="opacity: 1;" title="全色一次擁有"></a>
+                            <a href="#buy"><img src="images/btn gif/teiki_btn.gif" style="opacity: 1;"
+                                    title="全色一次擁有"></a>
                         </div>
                         <!-- 4入組 -->
                         <div class="teiki4">
@@ -126,6 +150,26 @@
                                     alt=""></a></li>
                     </ul>
                 </section>
+                
+                <!-- GetButton.io widget -->
+                <script type="text/javascript">
+                    (function () {
+                        var options = {
+                            facebook: "385203498713173", // Facebook page ID
+                            // line: "//lin.ee/k2Dli6F", // Line QR code URL
+                            line:"//line.me/R/oaMessage/@fhl1857j/?%25E7%25B4%25A2%25E5%258F%2596%25E5%259B%259E%25E8%25B3%25BC%25E5%2584%25AA%25E6%2583%25A0",
+                            call_to_action: "Message us", // Call to action
+                            button_color: "#FF6550", // Color of button
+                            position: "right", // Position may be 'right' or 'left'
+                            order: "facebook,line", // Order of buttons
+                        };
+                        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                    })();
+                </script>
+                <!-- /GetButton.io widget -->
                 <!-- ▲自由編集箇所▲ -->
             </div>
             <!-- contents_standard End -->
@@ -156,6 +200,10 @@
         <br>
     </div>
     <!-- wrapper End -->
+    <!-- 網頁設計師編輯區塊 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
