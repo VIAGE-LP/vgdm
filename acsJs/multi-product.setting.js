@@ -17,7 +17,7 @@ const PRODUCT_LIST = [
 		{ category1 : 'SG',  image_url : SETTING_DOMAIN_URL + '/access_form_sample/商品圖/寧靜灰.jpg' },
 	  ]
 	},
-	// 可複數 深藍→黑→粉→紫→水藍
+	// 可複數 海軍藍->率性黑->櫻花粉->薰衣草紫->天空藍->異色黑->寧靜灰
 ];
 
 
@@ -67,18 +67,18 @@ const PRODUCT_CATEGORY_MAPPING = [
 			{ product_code : '4560449970594'  , category2 : 'LL' , category1 : 'BK' } ,
 
 			{ product_code : '4560449970327'  , category2 : 'S' , category1 : 'RD' } ,
-			{ product_code : '4560449970662'  , category2 : 'SM' , category1 : 'RD' } ,
+			{ product_code : '4560449970631'  , category2 : 'SM' , category1 : 'RD' } ,
 			{ product_code : '4560449970334'  , category2 : 'M' , category1 : 'RD' } , 
-			{ product_code : '4560449970679'  , category2 : 'ML' , category1 : 'RD' } ,
+			{ product_code : '4560449970648'  , category2 : 'ML' , category1 : 'RD' } ,
 			{ product_code : '4560449970341'  , category2 : 'L' , category1 : 'RD' } , 
-			{ product_code : '4560449970686'  , category2 : 'LL' , category1 : 'RD' } ,
+			{ product_code : '4560449970655'  , category2 : 'LL' , category1 : 'RD' } ,
 
 			{ product_code : '4560449970297'  , category2 : 'S' , category1 : 'LP' } ,
-			{ product_code : '4560449970631'  , category2 : 'SM' , category1 : 'LP' } ,
+			{ product_code : '4560449970662'  , category2 : 'SM' , category1 : 'LP' } ,
 			{ product_code : '4560449970396'  , category2 : 'M' , category1 : 'LP' } , 
-			{ product_code : '4560449970648'  , category2 : 'ML' , category1 : 'LP' } ,
+			{ product_code : '4560449970679'  , category2 : 'ML' , category1 : 'LP' } ,
 			{ product_code : '4560449970310'  , category2 : 'L' , category1 : 'LP' } , 
-			{ product_code : '4560449970655'  , category2 : 'LL' , category1 : 'LP' } ,
+			{ product_code : '4560449970686'  , category2 : 'LL' , category1 : 'LP' } ,
 
 			{ product_code : '4560449970402'  , category2 : 'S' , category1 : 'SL' } ,
 			{ product_code : '4560449970693'  , category2 : 'SM' , category1 : 'SL' } ,
