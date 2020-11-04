@@ -43,10 +43,11 @@ $(document).ready(function () {
     } else {
         $(".line_link").attr("href", "https://line.me/R/ti/p/%40fhl1857j");
     }
+
+     //週年慶活動辦法下拉選單
+     $(".anniversary_2").hide();
+     $('.anniversary_1').click(function (e) { 
+         e.preventDefault();
+         $(".anniversary_2").toggle();
+     });
 });
-
-// 查詢老顧客獨享優惠
-// https://line.me/R/oaMessage/@fhl1857j/?%E6%9F%A5%E8%A9%A2%E8%80%81%E9%A1%A7%E5%AE%A2%E7%8D%A8%E4%BA%AB%E5%84%AA%E6%83%A0
-
-// 索取最新優惠
-// https://line.me/R/oaMessage/@fhl1857j/?%E7%B4%A2%E5%8F%96%E6%9C%80%E6%96%B0%E5%84%AA%E6%83%A0
