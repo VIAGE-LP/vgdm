@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/nav.css" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- ▲自由編集箇所▲ -->
 </head>
 
@@ -78,7 +80,23 @@
                     <div class="fv">
                         <img src="images/vgdm30/01_banner.jpg" alt="">
                         <img class="mainview" src="images/vgdm30/01_fv.jpg" title="擁有完美胸型的捷徑-晚安立體美型內衣">
-                        <img src="images/vgdm30/02_million.jpg">
+                        <img class="anniversary_1" src="images/vgdm30/02_million.jpg">
+                        <div class="anniversary_2" style="display:none">
+                            <img src="./images/detail.png" alt="">
+                        </div>
+                        <!-- 彈跳視窗 -->
+                        <script>
+                            //週年慶活動辦法下拉選單
+                            $(".anniversary_2 img,.anniversary_2").hide();
+                            $('.anniversary_1').click(function (e) {
+                                e.preventDefault();
+                                $(".anniversary_2 img,.anniversary_2").attr("style", "display:block;");
+                            });
+                            $('.anniversary_2').click(function (e) {
+                                e.preventDefault();
+                                $(".anniversary_2 img,.anniversary_2").hide();
+                            });
+                        </script>
                         <img src="images/vgdm30/03_keypoint.jpg">
                         <img src="images/vgdm30/04_blogger.jpg">
                         <img src="images/vgdm30/05_magzine.jpg">
@@ -157,7 +175,7 @@
                 </div>
                 <a href=" https://line.me/R/ti/p/%40fhl1857j" target="blank" class="line_link">
                     <img id="line" src="images/s_line.png" alt=""></a>
-                
+
                 <!-- /GetButton.io widget -->
                 <!-- ▲自由編集箇所▲ -->
             </div>
@@ -190,8 +208,6 @@
     </div>
     <!-- wrapper End -->
     <!-- 網頁設計師編輯區塊 -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </body>
 
