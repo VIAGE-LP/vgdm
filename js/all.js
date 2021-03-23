@@ -1,9 +1,42 @@
 $(document).ready(function () {
     // 立即訂購btn動態
-    $('.buybtn').click(function (e) {
+    $('a[href="#buy"]').click(function (e) {
         e.preventDefault();
         $('html , body').animate({
             scrollTop: $('#buy').offset().top,
+        }, 900);
+    });
+
+    $("#offer_bra img,#offer_pants img").hide();
+
+    // 點02_btn_bra_SMP會連到並"展開"05_offer_bra_SMP
+    $('a[href="#offer_bra"]').click(function (e) {
+        e.preventDefault();
+        $("#offer_bra img").attr("style", "display:block;");
+        $('html , body').animate({
+            scrollTop: $('#offer_bra').offset().top,
+        }, 900);
+    });
+    // 點03_btn_pants_SMP會連到並"展開"07_offer_pants_SMP
+    $('a[href="#offer_pants"]').click(function (e) {
+        e.preventDefault();
+        $("#offer_pants img").attr("style", "display:block;");
+        $('html , body').animate({
+            scrollTop: $('#offer_pants').offset().top,
+        }, 900);
+    });
+    // 點06_btn_pants_2_SMP會往上連到03_pants_SMP
+    $('a[href="#pants"]').click(function (e) {
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#pants').offset().top,
+        }, 900);
+    });
+    // 點08_btn_set_SMP會往上連到04_offer_set_SMP
+    $('a[href="#offer_set"]').click(function (e) {
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#offer_set').offset().top,
         }, 900);
     });
 
@@ -30,21 +63,6 @@ $(document).ready(function () {
             $("#fb-root").attr({
                 style: "display: block;"
             });
-        } 
+        }
     });
-
-    //偵測sns line btn 手機版還是電腦版，連結不同
-    // var vw=$(window).width();
-    // if (vw <= 768) {
-    //     $(".line_link").attr("href", "https://line.me/R/oaMessage/@fhl1857j/?%E6%9F%A5%E8%A9%A2%E8%80%81%E9%A1%A7%E5%AE%A2%E7%8D%A8%E4%BA%AB%E5%84%AA%E6%83%A0");
-    // } else {
-    //     $(".line_link").attr("href", "https://line.me/R/ti/p/%40fhl1857j");
-    // }
-
-     //週年慶活動辦法下拉選單
-    //  $(".anniversary_2").hide();
-    //  $('.anniversary_1').click(function (e) { 
-    //      e.preventDefault();
-    //      $(".anniversary_2").toggle();
-    //  });
 });
