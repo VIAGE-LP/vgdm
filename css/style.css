@@ -191,7 +191,7 @@
  }
  
  .buybtn{
-    width: 174px;
+    width: 18%;
     position: fixed;
     right: 0;
     bottom: 76px;
@@ -200,7 +200,7 @@
 .buybtn img{width: 100%; height: auto;}
 @media screen and (max-width: 768px){
     .buybtn{
-        width: 28%;
+        width: 40%;
         max-width: 170px;
     }
 }
