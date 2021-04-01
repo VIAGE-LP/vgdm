@@ -12,12 +12,12 @@ $(document).ready(function () {
         }, 900);
     });
 
-    $("#offer_bra img,#offer_pants img").hide();
+    $("#offer_pants img").hide();
 
     // 點02_btn_bra_SMP會連到並"展開"05_offer_bra_SMP
     $('a[href="#offer_bra"]').click(function (e) {
         e.preventDefault();
-        $("#offer_bra img").attr("style", "display:block;");
+        // $("#offer_bra img").attr("style", "display:block;");
         $('html , body').animate({
             scrollTop: $('#offer_bra').offset().top,
         }, 900);
