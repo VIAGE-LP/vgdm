@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // 立即訂購btn動態
-    $('a[href="#buy"]').click(function (e) {
+    $('.buybtn').click(function (e) {
         e.preventDefault();
         var str = document.getElementById("couponCode");
         window.getSelection().selectAllChildren(str);
