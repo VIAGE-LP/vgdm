@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 $("#lp_form").ready(function () {
     //購物車下拉選單判斷預購
-    $('select[data-category="內衣"][data-name="size-selector"], select[data-category="內衣"][name="color-selector"]').change(function (e) {
+    $('select[data-category="內衣"][data-name="size-selector"], select[data-category="內衣"][name="color-selector"],select[id="cros-category-selector"][name="categories"]').change(function (e) {
         e.preventDefault();
         var size_selector = document.querySelector('select[data-category="內衣"][data-name="size-selector"]').value;
         var color_selector = document.querySelector('select[data-category="內衣"][name="color-selector"]').value;
