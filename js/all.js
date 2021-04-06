@@ -1,12 +1,7 @@
 $(document).ready(function () {
     // 立即訂購btn動態
-    $('.buybtn').click(function (e) {
+    $('a[href="#buy"]').click(function (e) {
         e.preventDefault();
-        var str = document.getElementById("couponCode");
-        window.getSelection().selectAllChildren(str);
-        document.execCommand("Copy");
-        alert("已複製優惠碼");
-
         $('html , body').animate({
             scrollTop: $('#buy').offset().top,
         }, 900);
@@ -70,4 +65,26 @@ $(document).ready(function () {
             });
         }
     });
+});
+
+$("#lp_form").ready(function () {
+    //購物車下拉選單判斷預購
+    $('select[data-name="size-selector"], select[name="color-selector').change(function (e) {
+        e.preventDefault();
+        var size_selector = document.querySelector('select[data-name="size-selector"]').value;
+        var color_selector = document.querySelector('select[name="color-selector"]').value;
+        var preorder_text = $('<span>', { text: '(預購)', style: 'color: red;' });
+        $('.form-group > span').empty();
+        if ((color_selector == "天空藍" && size_selector == "M") || (color_selector == "櫻花粉" && size_selector == "M") || (color_selector == "櫻花粉" && size_selector == "M/L") || (color_selector == "海軍藍" && size_selector == "M") || (color_selector == "薰衣草紫" && size_selector == "M") || (color_selector == "寧靜灰" && size_selector == "S") || (color_selector == "異色黑" && size_selector == "S") || (color_selector == "異色黑" && size_selector == "M/L")) {
+            $('select[data-name="size-selector"]').parent().after(preorder_text);
+        } else {
+            $('.form-group > span').empty();
+        }
+    });
+    // 天空藍：M
+    // 櫻花粉：M、M / L
+    // 海軍藍：M
+    // 薰衣草紫：M
+    // 寧靜灰: S
+    // 異色黑: S、M / L
 });
