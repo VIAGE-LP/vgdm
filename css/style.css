@@ -204,6 +204,9 @@
         max-width: 170px;
     }
 }
+#friends{
+    display: none;
+}
 
 #wh-widget-send-button{
     display: none;

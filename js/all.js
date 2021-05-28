@@ -7,6 +7,13 @@ $(document).ready(function () {
         }, 900);
     });
 
+    var edmhref = location.href;
+    if(edmhref=="https://viage-lp.github.io/vgdm/#friends"){
+        $("#friends").attr({
+            style: "display: block;"
+        });
+    }
+
     // $("#wh-call-to-action").removeAttr("wh-click");
     $("#wh-call-to-action").removeClass("wh-animation-in");
     //聊天機器人
