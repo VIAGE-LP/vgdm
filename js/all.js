@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     var edmhref = location.href;
-    if(edmhref=="https://viage-lp.github.io/vgdm/#friends"){
+    if(edmhref=="https://viagebeautybra.com/vgdm/#friends"){
         $("#friends").attr({
             style: "display: block;"
         });
