@@ -3,6 +3,7 @@
 
 <head>
     <title>Viage年中慶85折｜老顧客獨享一件只要$799,輕鬆培養美胸習慣👙</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- 編集削除禁止※スマホ最適化※編集削除禁止 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
@@ -90,7 +91,9 @@
                     <div class="fv">
                         <img src="images/01_banner_SMP.png" alt="">
                         <div id="friends">
-                            <img src="images/01_00_friends.jpg" alt="">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">
+                                <img src="images/01_00_friends.jpg" alt="">
+                            </a>
                         </div>
                         <img src="images/01_fv.png" alt="">
                         <img src="images/02_1_million.png" alt="">
@@ -134,6 +137,60 @@
                 </ul>
             </section>
 
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" style="background-color: #FFEDEE;">
+                        <div class="modal-body">
+                            <div class="titlebox d-flex">
+                                <h3>簡單4步驟，超殺折扣不放過</h3>
+                                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <p>Step1️⃣ 將以下資訊複製給你的好友</p>
+                            <p id="copy">
+                                【新朋友專屬優惠碼➜ 「vgfi300n」<br>
+                                專屬訂購網站➜ http://bit.ly/3rX4MzY<br>
+                                ⚠限購買2入(含)以上適用唷⚠】<br>
+                                備註欄填入我的(介紹人)手機號碼：
+                            </p>
+                            <a href="javascript:void(0)" onclick="copyEvent('copy')">
+                                <h4>→點我複製以上文字</h4>
+                            </a>
+                            <p>Step2️⃣ 好友使用優惠碼下單折扣$300元<br>
+
+                                Step3️⃣ 好友收貨後，客服將主動聯繫您提供－老朋友專屬9折再折$300優惠碼<br>
+
+                                Step4️⃣ 使用老顧客專屬優惠碼，回購價格下單再享折扣$300，最高共省$2900！
+                            </p>
+
+                            <br>
+                            <h3>活動辦法</h3>
+                            <p>
+                                一、介紹人資格：已於官網購買過Viage晚安立體美型內衣者<br>
+                                二、被介紹人資格：尚未於官網購買過Viage晚安立體美型內衣者<br>
+                                三、活動獎勵折扣<br>
+                                (一) 介紹人獎勵折扣：<br>
+                                獲折扣$300元優惠碼：介紹人於活動期間成功介紹1位新客購買Viage晚安立體美型內衣並完成收貨，即可獲得介紹人獎勵折扣$300元優惠碼(限收到優惠碼後30天內購買2入(含)以上使用)<br>
+                                (二) 被介紹人優惠：<br>
+                                購買2入(含)以上任一方案可享折扣$300元
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal 複製文字 -->
+            <script>
+                function copyEvent(id) {
+                    var str = document.getElementById(id);
+                    window.getSelection().selectAllChildren(str);
+                    document.execCommand("Copy")
+                    alert("分享資訊已複製");
+                }
+            </script>
+
             <!-- GetButton.io widget -->
             <div class="line_alert">
                 <p>點我索取優惠</p>
@@ -173,6 +230,17 @@
     <!-- 編集削除禁止※ACCESS　JAVASCRIPT※編集削除禁止 -->
 
     <!-- 網頁設計師編輯區塊 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </body>
 
