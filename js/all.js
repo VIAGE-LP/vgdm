@@ -6,9 +6,9 @@ $(document).ready(function () {
             scrollTop: $('#buy').offset().top,
         }, 900);
     });
-
+        
     var edmhref = location.href;
-    if(edmhref=="https://viage-lp.github.io/vgdm/#friends"){
+    if(edmhref.includes("#friends")){
         $("#friends").attr({
             style: "display: block;"
         });
