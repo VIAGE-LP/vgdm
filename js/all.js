@@ -41,20 +41,20 @@ $(document).ready(function () {
     });
 });
 
-// $("#lp_form").ready(function () {
-//     //購物車下拉選單判斷缺貨中
-//     $('select[data-name="size-selector"], select[name="color-selector').change(function (e) {
-//         e.preventDefault();
-//         var size_selector = document.querySelector('select[data-name="size-selector"]').value;
-//         var color_selector = document.querySelector('select[name="color-selector"]').value;
-//         var preorder_text = $('<span>', { text: '(缺貨中)', style: 'color: red;' });
-//         $('.form-group > span').empty();
-//         if ( (color_selector == "薰衣草紫" && size_selector == "M")) {
-//             $('select[data-name="size-selector"]').parent().after(preorder_text);
-//         } else {
-//             $('.form-group > span').empty();
-//         }
-//     });
+$("#lp_form").ready(function () {
+    //購物車下拉選單判斷缺貨中
+    $('select[data-name="size-selector"], select[name="color-selector').change(function (e) {
+        e.preventDefault();
+        var size_selector = document.querySelector('select[data-name="size-selector"]').value;
+        var color_selector = document.querySelector('select[name="color-selector"]').value;
+        var preorder_text = $('<span>', { text: '(預購)', style: 'color: red;' });
+        $('.form-group > span').empty();
+        if ( (color_selector == "異色黑" && size_selector == "ML")) {
+            $('select[data-name="size-selector"]').parent().after(preorder_text);
+        } else {
+            $('.form-group > span').empty();
+        }
+    });
     
-//     // 薰衣草紫：M
-// });
+    // 異色黑：ML
+});
