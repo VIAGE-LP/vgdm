@@ -208,6 +208,10 @@
     display: none;
 }
 
+#offer_pants{
+    display: none;
+}
+
 #wh-widget-send-button{
     display: none;
 }

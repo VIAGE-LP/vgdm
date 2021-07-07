@@ -6,6 +6,13 @@ $(document).ready(function () {
             scrollTop: $('#buy').offset().top,
         }, 900);
     });
+
+    $('a[href="#buy_pants"]').click(function (e) {
+        e.preventDefault();
+        $('html , body').animate({
+            scrollTop: $('#buy_pants').offset().top,
+        }, 900);
+    });
         
     var edmhref = location.href;
     if(edmhref.includes("#friends")){
@@ -13,6 +20,15 @@ $(document).ready(function () {
             style: "display: block;"
         });
     }
+
+    // 點08_btn_set_SMP會連到並"展開"id="offer_pants"
+    $('.btn_pants_2').click(function (e) {
+        e.preventDefault();
+        $("#offer_pants").attr("style", "display:block;");
+        $('html , body').animate({
+            scrollTop: $('#offer_pants').offset().top,
+        }, 900);
+    });
 
     // $("#wh-call-to-action").removeAttr("wh-click");
     $("#wh-call-to-action").removeClass("wh-animation-in");
