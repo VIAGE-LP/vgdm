@@ -24,7 +24,7 @@ $(document).ready(function () {
     // 點08_btn_set_SMP會連到並"展開"id="offer_pants"
     $('.btn_pants_2').click(function (e) {
         e.preventDefault();
-        $("#offer_pants").attr("style", "display:block;");
+        $(".offer_pants").attr("style", "display:block;");
         $('html , body').animate({
             scrollTop: $('#offer_pants').offset().top,
         }, 900);
