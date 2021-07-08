@@ -191,6 +191,7 @@
  }
  
  .buybtn{
+    cursor:pointer;
     width: 174px;
     position: fixed;
     right: 0;
